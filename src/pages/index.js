@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -7,15 +6,13 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <SEO />
+    <Image />
+    <div style={{ color: '#52545F', textAlign: 'center', fontFamily: 'Lato', margin: '8rem 0.5rem 0' }}>
+      <h1 style={{ fontSize: '2rem', fontWeight: 'normal' }}>Criamos Experiências Digitais Execpcionais</h1>
+      <p style={{ fontSize: '1.1rem' }}>Especialistas em desenvolvimento de produtos digitais. Podemos te ajudar a tirar sua idéia do papel e transformá-lo em um negócio promissor!</p>
+      <a href="mailto:falecom@lotusexperience.com.br">falecom@lotusexperience.com.br</a>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </Layout>
 )
 
